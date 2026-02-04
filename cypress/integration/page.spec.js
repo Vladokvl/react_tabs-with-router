@@ -10,7 +10,7 @@ const page = {
 
 describe('', () => {
   beforeEach(() => {
-    if (failed) Cypress.runner.stop();
+    if (typeof failed !== 'undefined' && failed) Cypress.runner.stop();
   });
 
   describe('App by default', () => {
